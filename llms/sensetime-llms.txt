@@ -1,0 +1,29 @@
+# SenseTime
+
+> SenseTime (商汤科技) is a Shanghai-headquartered artificial-intelligence company building foundation models, AI compute infrastructure, and vision AI. Its developer-facing surface is the SenseNova LLM API service platform, exposing large multimodal models (SenseNova U-series, SenseNova 6.x) for text, image, and video understanding, reasoning, and generation. Authentication uses an Access Key ID / Secret Access Key pair (OAuth2/OIDC available via SenseCore signin). An official Python client library and `sensenova` CLI are published.
+
+## APIs
+- [SenseNova LLM API — Documentation](https://platform.sensenova.cn/en/docs): Chat completions, embeddings, image/video generation, and fine-tuning over HTTP. Base URL https://api.sensenova.cn/v1
+- [SenseNova Developer Platform](https://platform.sensenova.cn/en): Console, models, and token plans.
+
+## Auth
+- Access Key ID + Secret Access Key (AK/SK), signed as a JWT Bearer token in the Authorization header.
+- OAuth2 / OpenID Connect via SenseCore: https://platform.sensenova.cn/.well-known/openid-configuration (issuer https://signin.sensecore.cn/)
+
+## SDKs & Tools
+- [sensenova (PyPI)](https://pypi.org/project/sensenova/): Official Python client library and CLI.
+- [OpenSenseNova (GitHub)](https://github.com/OpenSenseNova): SenseNova model and skills repositories.
+
+## Artifacts
+- Authentication profile: authentication/sensetime-authentication.yml
+- OAuth scopes: scopes/sensetime-scopes.yml
+- Well-known discovery: well-known/sensetime-well-known.yml
+- Packages / SDKs: packages/sensetime-packages.yml
+- CLI: cli/sensetime-cli.yml
+- API conventions: conventions/sensetime-conventions.yml
+- Domain security: security/sensetime-domain-security.yml
+
+## Company
+- [SenseTime](https://www.sensetime.com): Company site.
+- [Pricing / Token Plan](https://www.sensenova.cn/en/token-plan)
+- [Login / Console](https://platform.sensenova.cn/en/console)

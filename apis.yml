@@ -1,8 +1,29 @@
 aid: sensetime
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/sensetime.png
 name: SenseTime
-description: 'SenseTime is a company surfaced as a portfolio company of tiger-global and added to the
-  API Evangelist network as a stub for enrichment. Sector: artificial-intelligence. This profile is a
-  lead awaiting the enrichment pipeline.'
+description: 'SenseTime (商汤科技) is a Shanghai-headquartered artificial-intelligence
+  company building foundation models, AI compute infrastructure, and vision AI. Its
+  developer-facing surface is the SenseNova LLM API service platform, which exposes
+  large multimodal models (SenseNova U-series, SenseNova 6.x) for text, image, and
+  video understanding, reasoning, and generation via an HTTP API. Developers authenticate
+  with an Access Key ID / Secret Access Key pair (with OAuth2/OIDC available through
+  SenseCore signin), call chat-completions, embeddings, and fine-tuning endpoints,
+  and integrate with an official Python client library and CLI. SenseTime also operates
+  SenseCore AI infrastructure, SenseFoundry vision AI, and native applications. This
+  profile was surfaced as a Tiger Global portfolio company and enriched from public
+  developer sources.'
 url: https://raw.githubusercontent.com/api-evangelist/sensetime/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,16 +33,72 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Artificial Intelligence
-apis: []
+- Machine Learning
+- Foundation Models
+- Large Language Models
+- Generative AI
+- Computer Vision
+- LLM API
+apis:
+- name: SenseNova LLM API
+  description: The SenseNova LLM API service platform exposes SenseTime's large multimodal
+    foundation models (chat completions, embeddings, image and video generation, and
+    fine-tuning) over an HTTP API, authenticated with an Access Key ID / Secret Access
+    Key pair.
+  humanURL: https://platform.sensenova.cn/en/docs
+  baseURL: https://api.sensenova.cn/v1
+  tags:
+  - LLM
+  - Foundation Models
+  - Chat Completions
+  - Embeddings
+  properties:
+  - type: Documentation
+    url: https://platform.sensenova.cn/en/docs
+  - type: DeveloperPortal
+    url: https://platform.sensenova.cn/en
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/sensetime-domain-security.yml
 - type: Website
   url: https://www.sensetime.com
+- type: DeveloperPortal
+  url: https://platform.sensenova.cn/en
+- type: Documentation
+  url: https://platform.sensenova.cn/en/docs
+- type: Login
+  url: https://platform.sensenova.cn/en/console
+- type: Pricing
+  url: https://www.sensenova.cn/en/token-plan
+- type: GitHubOrganization
+  url: https://github.com/OpenSenseNova
+- type: WellKnown
+  url: well-known/sensetime-well-known.yml
+- type: Authentication
+  url: authentication/sensetime-authentication.yml
+- type: OAuthScopes
+  url: scopes/sensetime-scopes.yml
+- type: Packages
+  url: packages/sensetime-packages.yml
+- type: SDKs
+  url: packages/sensetime-packages.yml
+- type: CLI
+  url: cli/sensetime-cli.yml
+- type: Conventions
+  url: conventions/sensetime-conventions.yml
+- type: LLMsTxt
+  url: llms/sensetime-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: enriched
+  artifacts_added: 9
+  pass: local-v1

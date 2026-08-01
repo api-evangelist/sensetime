@@ -1,0 +1,35 @@
+generated: '2026-07-21'
+method: searched
+source: https://pypi.org/project/sensenova/
+docs: https://platform.sensenova.cn/en/docs
+conventions:
+  authentication:
+    style: access-key-id + secret-access-key (AK/SK), signed as a JWT Bearer token
+    header: Authorization
+    ref: authentication/sensetime-authentication.yml
+  versioning:
+    scheme: uri-path
+    current: v1
+    base_url: https://api.sensenova.cn/v1
+  request_shape:
+    chat_completions:
+      messages: array of {role, content} objects (system/user/assistant roles)
+      model: model identifier string (e.g. SenseNova U-series)
+  response_envelope:
+    chat_completions: data.choices[].message  (choice objects nested under a data field)
+  streaming:
+    supported: true
+    mechanism: server-sent event stream when stream=true (SDK `--stream` flag)
+  async_support:
+    supported: true
+    note: SDK exposes acreate() coroutine variants for network-bound methods
+  idempotency:
+    documented: false
+    note: No idempotency-key header is documented on the public SenseNova surface.
+  pagination:
+    documented: false
+cross_links:
+  authentication: authentication/sensetime-authentication.yml
+  scopes: scopes/sensetime-scopes.yml
+  packages: packages/sensetime-packages.yml
+  cli: cli/sensetime-cli.yml

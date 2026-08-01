@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: searched
+source: https://pypi.org/project/sensenova/
+cli:
+  name: sensenova
+  binary: sensenova
+  distributed_via: packages/sensetime-packages.yml
+  install:
+  - pip install --upgrade sensenova
+  auth:
+    env:
+    - SENSENOVA_ACCESS_KEY_ID
+    - SENSENOVA_SECRET_ACCESS_KEY
+  command_groups:
+  - group: api
+    description: Invoke SenseNova API resources directly from the shell.
+    examples:
+    - sensenova api chat_completions.create -m <model> -g user "Say this is a test!" --stream
+  - group: tools
+    description: Local data utilities for working with the API (e.g. preparing fine-tune data).
+    examples:
+    - sensenova tools fine_tunes.prepare_data -f data.json

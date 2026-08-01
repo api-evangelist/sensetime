@@ -1,0 +1,18 @@
+generated: '2026-07-21'
+method: searched
+source: https://pypi.org/project/sensenova/
+packages:
+- language: python
+  registry: pypi
+  name: sensenova
+  version: 1.0.6
+  url: https://pypi.org/project/sensenova/
+  install: pip install --upgrade sensenova
+  official: true
+  author: Sensetime
+  description: >-
+    Official Python client library for the SenseNova API. Configures auth via
+    SENSENOVA_ACCESS_KEY_ID / SENSENOVA_SECRET_ACCESS_KEY, exposes ChatCompletion
+    (sync + async), embeddings, and fine-tuning resources, and ships a `sensenova`
+    CLI. Requires Python 3.7.1+.
+  provides_cli: true

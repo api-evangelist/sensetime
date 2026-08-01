@@ -1,0 +1,31 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.sensetime.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 10 23:59:59 2026 GMT
+  hsts: false
+- host: platform.sensenova.cn
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 23 23:59:59 2026 GMT
+  hsts: false
+- host: api.sensenova.cn
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Dec 23 23:59:59 2026 GMT
+  hsts: null
+domains:
+- domain: sensetime.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+- domain: sensenova.cn
+  dnssec: false
+  caa: []
+  spf: false
+  dmarc: false

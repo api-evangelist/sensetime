@@ -1,0 +1,36 @@
+generated: '2026-07-21'
+method: searched
+source: https://pypi.org/project/sensenova/
+docs: https://platform.sensenova.cn/en/docs
+summary:
+  types: [apiKey, oauth2, openIdConnect]
+  api_key_model: access-key-id + secret-access-key (AK/SK)
+  oauth2_flows: [authorizationCode, clientCredentials, implicit, refreshToken]
+  notes: >-
+    The primary SenseNova LLM API auth is an Access Key ID / Secret Access Key pair
+    used to sign a short-lived JWT presented in the Authorization header. OAuth2 /
+    OIDC is available at the SenseCore identity provider (signin.sensecore.cn) as
+    surfaced by the platform's /.well-known/openid-configuration document.
+schemes:
+- name: SenseNovaAccessKey
+  type: apiKey
+  in: header
+  scheme_name: Authorization
+  description: >-
+    Access Key ID + Secret Access Key issued in the SenseNova console. The client
+    library signs a JWT from the key pair and sends it as a Bearer token in the
+    Authorization header. Configured via SENSENOVA_ACCESS_KEY_ID and
+    SENSENOVA_SECRET_ACCESS_KEY environment variables (or sensenova.access_key_id /
+    sensenova.secret_access_key in the Python SDK).
+  sources: [pypi:sensenova, docs]
+- name: SenseCoreOIDC
+  type: openIdConnect
+  openIdConnectUrl: https://platform.sensenova.cn/.well-known/openid-configuration
+  issuer: https://signin.sensecore.cn/
+  authorization_endpoint: https://signin.sensecore.cn/oauth2/auth
+  token_endpoint: https://signin.sensecore.cn/oauth2/token
+  jwks_uri: https://signin.sensecore.cn/.well-known/jwks.json
+  grant_types: [authorization_code, implicit, client_credentials, refresh_token]
+  scopes: [openid, offline, offline_access]
+  token_endpoint_auth_methods: [client_secret_post, client_secret_basic, private_key_jwt, none]
+  sources: [well-known/sensetime-openid-configuration.json]
