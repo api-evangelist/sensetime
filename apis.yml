@@ -48,11 +48,11 @@ modified: '2026-07-21'
 tags:
 - Company
 - Artificial Intelligence
-- Machine-Learning
+- Machine Learning
 - Foundation Models
 - LLM
 - Generative AI
-- Computer-Vision
+- Computer Vision
 - LLM API
 tags_raw:
 - Company
@@ -63,6 +63,8 @@ tags_raw:
 - Generative AI
 - Computer Vision
 - LLM API
+- Machine-Learning
+- Computer-Vision
 apis:
 - name: SenseNova LLM API
   description: The SenseNova LLM API service platform exposes SenseTime's large multimodal
