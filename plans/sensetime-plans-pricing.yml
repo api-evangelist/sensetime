@@ -1,0 +1,35 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://www.sensenova.cn/en/token-plan
+sources:
+- https://www.sensenova.cn/en/token-plan
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: developer-api
+pricing_basis: free
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: true
+note: Page states free during public beta (¥0/mo) with paid Lite/Pro tiers coming soon; no paid prices
+  shown.
+plan_count: 2
+currency: CNY
+plans:
+- name: Free · Public beta
+  price_text: ¥ 0 /mo
+  price: 0
+  currency: CNY
+  period: month
+  unit: credits
+  included_quota: 60,000 credits / 5 hours
+- name: Lite / Pro
+  price_text: Coming soon
+  period: none
+rate_limit_statements:
+- 60,000 credits / 5 hours
+- Up to 20 API keys
