@@ -33,3 +33,26 @@ plans:
 rate_limit_statements:
 - 60,000 credits / 5 hours
 - Up to 20 API keys
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models:
+  - metered
+  units:
+  - credit
+  plans:
+  - name: Free · Public beta
+    access: other
+    model: metered
+    model_how: derived
+    units:
+    - credit
+    periods:
+    - month
+  - name: Lite / Pro
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
