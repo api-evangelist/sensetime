@@ -64,6 +64,100 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-SenseTime is a company surfaced as a portfolio company of tiger-global and added to the API Evangelist network as a stub for enrichment. Sector: artificial-intelligence. This profile is a lead awaiting the enrichment pipeline.
+SenseTime (商汤科技) is a Shanghai-headquartered artificial-intelligence company building foundation models, AI compute infrastructure, and vision AI. Its developer-facing surface is the SenseNova LLM API service platform, which exposes large multimodal models (SenseNova U-series, SenseNova 6.x) for text, image, and video understanding, reasoning, and generation via an HTTP API. Developers authenticate with an Access Key ID / Secret Access Key pair (with OAuth2/OIDC available through SenseCore signin), call chat-completions, embeddings, and fine-tuning endpoints, and integrate with an official Python client library and CLI. SenseTime also operates SenseCore AI infrastructure, SenseFoundry vision AI, and native applications. This profile was surfaced as a Tiger Global portfolio company and enriched from public developer sources.
 
-Backed by: tiger-global — https://www.sensetime.com
+**Areas:** Company · Artificial Intelligence · Machine Learning · Foundation Models · LLM · Generative AI · Computer Vision · LLM API
+
+## SenseTime on APIs.io
+
+Everything profiled for SenseTime is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/sensetime/](https://apis.io/providers/sensetime/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [SenseNova LLM API](https://apis.io/apis/sensetime/sensenova-llm-api/) — The SenseNova LLM API service platform exposes SenseTime's large multimodal foundation models (chat completions, embeddings, image and video generation, and…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Sensetime Authentication](https://apis.io/security/sensetime/sensetime-authentication/)
+- [Sensetime Domain Security](https://apis.io/security/sensetime/sensetime-domain-security/)
+
+#### OAuth scopes (1)
+
+The permissions the API asks for.
+
+- [Sensetime Scopes](https://apis.io/scopes/sensetime/sensetime-scopes/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Sensetime Plans Pricing](https://apis.io/plans/sensetime/sensetime-plans-pricing/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.sensetime.com)
+- [Documentation](https://platform.sensenova.cn/en/docs)
+- [Pricing](https://www.sensenova.cn/en/token-plan)
+- [Blog](https://www.sensetime.com/en/news)
+- [GitHub](https://github.com/OpenSenseNova)
+
+## API Evangelist rating
+
+**Kin Score 25.1** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 47.6 |
+| Access clarity | 38.2 |
+
+**Agent readiness 10.8** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 20.0** — AI & Biometrics
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/sensetime/](https://apis.io/providers/sensetime/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for SenseTime: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/sensetime/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
